@@ -1,4 +1,4 @@
-def Maximum_Sum_Subarray(arr, n):
+def Maximum_Sum_Subarray_On3(arr, n):
     ans = float('-inf')
     for sub_array_size in range(1, n + 1):
         for start_index in range(0, n):
@@ -11,7 +11,7 @@ def Maximum_Sum_Subarray(arr, n):
     return ans
 
     
-def Max_Subarray_Sum(arr,n):	
+def Max_Subarray_Sum_brute(arr,n):	
     if (n == 1):
         return arr[0]
     m = n/2
